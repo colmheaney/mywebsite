@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @title + ' | colm heaney' %></title>  
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+    <link href='/css/reset.css' rel='stylesheet' type='text/css'>
+    <link href='/css/style.css' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/site.js"></script>
+  </head>
+  <body onload="Site.init();">
+    <header>
+      <nav class="grid">
+        <h2 id="logo" class="col-3-4"><a href="/">colm heaney</a></h2>
+        <ul class="col-1-4">
+            <li class="selected" name="/"><a href="/">about</a></li> 
+            <li name="/projects" ><a href="/projects">projects</a></li> 
+            <li name="/blog" ><a href="/blog">blog</a></li>
+        </ul>
+      </nav>
+    </header>
+      <div class="grid">
+        <%= yield %>
+      </div>
+  </body>
+</html>  
