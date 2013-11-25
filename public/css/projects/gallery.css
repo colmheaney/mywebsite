@@ -1,0 +1,17 @@
+#gallery-container {
+	 position: relative;
+	 width: 50%;
+	 height: 300px;
+	 margin: 40px auto;
+}
+#control h2 {
+	margin-bottom: 20px;
+}
+#control {
+	text-align: center;
+	margin-top: 40px;
+}
+.stack { position: absolute; top: 0px; left: 20%; z-index: 0; }
+.stack img { -webkit-box-shadow: 1px -1px 0 0 #aaaaaa; -moz-box-shadow: 1px -1px 0 0 #aaaaaa; box-shadow: 1px -1px 0 0 #aaaaaa;}
+.selected {	z-index: 1; }
+

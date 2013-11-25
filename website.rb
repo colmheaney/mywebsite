@@ -1,17 +1,31 @@
 require 'rubygems'
 require 'sinatra'
 
-get '/' do
-	@title = 'about'
-	erb :about
-end
+class Sinatra::Application
 
-get '/projects' do
-	@title = 'projects'
-	erb :projects
-end
+	get '/' do
+		@title = 'about'
+		erb :about
+	end
 
-get '/blog' do
-	@title = 'blog'
-	erb :blog
+	get '/projects' do
+		@title = 'projects'
+		erb :projects
+	end
+
+	get '/projects/gallery' do
+		@title = 'gallery'
+		erb :gallery
+	end
+
+	get '/projects/chrome_homepage' do
+		@title = 'chrome homepage'
+		erb :chrome_homepage
+	end
+
+	get '/blog' do
+		@title = 'blog'
+		erb :blog
+	end
+
 end
