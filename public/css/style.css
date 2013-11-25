@@ -204,6 +204,7 @@ h2.project {
 ===================================*/
 
 @media (max-width: 850px) {
+  .grid { width: auto; margin: 0 5%; }
   [class*='col-'] { padding-left: 0; }
   nav { text-align: center; }
   nav ul { float: none;}
