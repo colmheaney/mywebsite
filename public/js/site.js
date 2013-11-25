@@ -22,7 +22,7 @@ var Site = {
       });
   },
   sortItems : function() {
-    $('li.project p a').click(function(event) {
+    $('p.meta a').click(function(event) {
       var $this = $(this);
       var tags = $("a[title*='" + $this.text() + "']");
       var lis = tags.closest('li'); 
@@ -30,14 +30,14 @@ var Site = {
       lis.animate({
         opacity: 0
       }, 
-        200, function() { 
+        100, function() { 
           lis.parent().prepend(lis); 
           $("a").removeClass('on');
           tags.addClass('on')
           lis.animate({ 
             opacity: 1 
           },
-            500);
+            700);
       });
       $("html, body").animate({ scrollTop: 0 }, 200);
       return false;

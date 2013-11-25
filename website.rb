@@ -14,9 +14,9 @@ class Sinatra::Application
 		erb :projects
 	end
 
-	get '/projects/gallery' do
-		@title = 'gallery'
-		erb :gallery
+	get '/projects/slider' do
+		@title = 'slider'
+		erb :slider
 	end
 
 	get '/projects/chrome_homepage' do
