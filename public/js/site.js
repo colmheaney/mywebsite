@@ -31,17 +31,20 @@ var Site = {
       lis.animate({
         opacity: 0
       }, 
-        100, function() { 
-          lis.parent().prepend(lis); 
-          $("a").removeClass('on');
-          tags.addClass('on')
-          lis.animate({ 
-            opacity: 1 
-          },
-            700);
-      });
-      $("html, body").animate({ scrollTop: 0 }, 200);
-      return false;
+        100, function() {
+              $("html, body").animate({ 
+                scrollTop: 0 
+              }, 
+                200, function() { 
+                  lis.parent().prepend(lis); 
+                  $("a").removeClass('on');
+                  tags.addClass('on');
+                  lis.animate({ 
+                    opacity: 1 
+                  },
+                    700);
+                });
+        });
     });
   },
   scroll : function() {
