@@ -2,6 +2,7 @@ var Site = {
   init : function() {
     this.nav();
     this.sortItems();
+    this.scroll();
   },
   nav : function() {
 
@@ -42,5 +43,8 @@ var Site = {
       $("html, body").animate({ scrollTop: 0 }, 200);
       return false;
     });
+  },
+  scroll : function() {
+    $("html, body").animate({ scrollTop: 0 }, 200);
   }
 }
