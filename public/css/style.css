@@ -161,7 +161,7 @@ li.project {
   padding-bottom: 30px;
 }
 li.project div, li.project img {
-  max-width: 100%;
+  max-width: 98%;
   height: auto; 
 }
 li.project div {
@@ -174,20 +174,20 @@ li.project img {
   -moz-box-shadow:    0px 2px 7px #aaaaaa;
   box-shadow:         0px 2px 7px #aaaaaa; 
 }
-li.project p.meta {
+p.meta, p.tags {
   font-style: italic;
   color: #787878; 
   font-size: 14px;
   margin-bottom: 30px;
 }
-li.project p.meta a {
+p.meta a {
   text-decoration: underline;
 }
 h2.project {
   margin: 40px 0 20px 0;
   text-align: center;
 }
-.meta a.on {
+.tags a.on {
   background: #658092;
   color: #ffffff;
   padding: 2px 3px;
@@ -211,10 +211,10 @@ h2.project {
   nav ul { float: none; }
   header h1 { float: none; padding-left: 0; }
   .nav-table { display: table; margin: 0 auto; }
-  li.project { padding-bottom: 0; margin-top: 20px; }
+  li.project { padding-bottom: 10px; margin-top: 20px; }
   li.project p { clear: both; }
   li.project p.meta { margin-bottom: 10px; }
 }
 @media (max-width: 600px) {
-  li.project { text-align: center; }
+  li.project p.meta, h2 { text-align: center; }
 }

@@ -23,7 +23,7 @@ var Site = {
       });
   },
   sortItems : function() {
-    $('p.meta a').click(function(event) {
+    $('p.tags a').click(function(event) {
       var $this = $(this);
       var tags = $("a[title*='" + $this.text() + "']");
       var lis = tags.closest('li'); 
@@ -31,20 +31,20 @@ var Site = {
       lis.animate({
         opacity: 0
       }, 
-        100, function() {
-              $("html, body").animate({ 
+        200, function() {
+              $('html,body').animate({ 
                 scrollTop: 0 
               }, 
-                200, function() { 
-                  lis.parent().prepend(lis); 
-                  $("a").removeClass('on');
-                  tags.addClass('on');
-                  lis.animate({ 
-                    opacity: 1 
-                  },
-                    700);
-                });
-        });
+                0, function() { 
+                    lis.parent().prepend(lis); 
+                    $("a").removeClass('on');
+                    tags.addClass('on');
+                    lis.animate({ 
+                      opacity: 1 
+                    },
+                      700);
+                  });
+            });
     });
   },
   scroll : function() {
