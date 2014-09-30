@@ -6,6 +6,7 @@
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
     <link href='/css/reset.css' rel='stylesheet' type='text/css'>
     <link href='/css/style.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/font-awesome-4.2.0/css/font-awesome.min.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="/js/site.js"></script>
     <!--[if lt IE 9]>
@@ -20,7 +21,7 @@
           <ul>
               <li name="/"><a href="/">about</a></li> 
               <li name="/projects" ><a href="/projects">projects</a></li> 
-              <li name="/blog" ><a href="/blog">blog</a></li>
+              <%#<li name="/blog" ><a href="/blog">blog</a></li>%>
           </ul>
         </div>
       </nav>
@@ -29,18 +30,19 @@
         <%= yield %>
       </div>
       <footer class="row">
-          <ul class="about-table">
+          <ul class="fa-ul">
             <li>
-                <a href="https://twitter.com/ColmJHeaney" target="_blank"><img src="/images/twitter.png"></a>
+              <a href="https://twitter.com/ColmJHeaney" target="_blank"><i class="fa-li fa fa-2x fa-twitter"></i></a>
             </li>
             <li>
-                <a href="https://github.com/colmheaney" target="_blank"><img src="/images/github.png"></a>
+              <a href="https://github.com/colmheaney" target="_blank"><i class="fa-li fa fa-2x fa-github"></i></a>
             </li>
             <li>
-                <a href="mailto:colm.heaney@gmail.com" target="_blank"><img alt="email" src="/images/email.png"></a>
+              <a href="mailto:colm.heaney@gmail.com" target="_blank"><i class="fa-li fa fa-2x fa-envelope"></i></a>
             </li>
           </ul>
-          <p class="copyright">©2013. All Rights Reserved.</p>
+          <div class="clear40"></div>
+          <p class="copyright">©2014. All Rights Reserved.</p>
       </footer>  
       <script type="text/javascript" src="/js/retina.js"></script    
   </body>

@@ -56,6 +56,11 @@ a, a:visited {
 }
 a:hover {
   color: #c8d2d9;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;     
 }
 a img {
   border: none;
@@ -133,20 +138,19 @@ article {
 article p {
   padding-right: 10px;
 }
-.about-table {
-  display: table; 
-  margin: 0 auto; 
-}
-footer {
-  margin: 20px 0;
+footer ul {
+  text-align: center;
+  clear: both;
 }
 footer li {
-  clear: both;
   display: inline-block; 
-  margin-right: 20px;
+  margin-left: 50px;
 }
-footer img {
-  float: left;
+.clear40 {
+  margin-top: 40px;
+}
+.fa-ul {
+  margin-left: 0px !important;
 }
 
 
