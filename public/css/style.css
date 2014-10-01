@@ -146,6 +146,17 @@ footer li {
   display: inline-block; 
   margin-left: 50px;
 }
+footer i {
+  color: #cccccc;
+}
+footer i:hover {
+  color: #dddddd;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;     
+}
 .clear40 {
   margin-top: 40px;
 }
